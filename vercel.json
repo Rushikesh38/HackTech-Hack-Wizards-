@@ -1,13 +1,13 @@
 {
     "builds": [
         {
-            "src": "api/app.py",
+            "src": "ML model/app.py",
             "use": "@vercel/python"
         }
     ],
     "routes": [
         {
-            "src": "/predict",
+            "src": "/(.*)",
             "dest": "ML model/app.py"
         }
     ]
